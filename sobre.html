@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre // Rodrigo Costa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="grid-bg"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="mono">&gt; rodrigo.dev</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link"><span class="mono">01.</span> início</a></li>
+      <li><a href="sobre.html" class="nav-link active"><span class="mono">02.</span> sobre</a></li>
+      <li><a href="projetos.html" class="nav-link"><span class="mono">03.</span> projetos</a></li>
+      <li><a href="contato.html" class="nav-link"><span class="mono">04.</span> contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner reveal">
+        <span class="mono page-tag">&gt; sobre.txt</span>
+        <h1 class="page-title">Sobre mim</h1>
+        <p class="page-subtitle mono">Um desenvolvedor que vê código como arte e sistemas como soluções reais.</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-grid">
+        <div class="about-photo-col reveal">
+          <div class="about-photo-wrap">
+            <div class="photo-frame medium">
+              <div class="photo-corner tl"></div>
+              <div class="photo-corner tr"></div>
+              <div class="photo-corner bl"></div>
+              <div class="photo-corner br"></div>
+              <div class="photo-scan"></div>
+              <img src="foto.jpg" alt="Rodrigo Costa" class="hero-photo" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+              <div class="photo-fallback mono">R.C</div>
+            </div>
+          </div>
+          <div class="about-quick reveal">
+            <div class="quick-item">
+              <span class="mono quick-key">nome</span>
+              <span class="quick-val">Rodrigo de Carvalho Costa</span>
+            </div>
+            <div class="quick-item">
+              <span class="mono quick-key">idade</span>
+              <span class="quick-val">19 anos</span>
+            </div>
+            <div class="quick-item">
+              <span class="mono quick-key">local</span>
+              <span class="quick-val">Salvador, BA</span>
+            </div>
+            <div class="quick-item">
+              <span class="mono quick-key">curso</span>
+              <span class="quick-val">ADS — 3º sem. UniJorge</span>
+            </div>
+            <div class="quick-item">
+              <span class="mono quick-key">status</span>
+              <span class="quick-val accent">disponível para projetos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <div class="about-block reveal">
+            <span class="mono block-tag">&gt; história</span>
+            <p>
+              Desde cedo, tecnologia não era só passatempo — era linguagem. Enquanto outros jogavam, Rodrigo desmontava como os jogos funcionavam, como os sites eram feitos, o que estava por trás de cada tela.
+            </p>
+          </div>
+          <div class="about-block reveal">
+            <span class="mono block-tag">&gt; presente</span>
+            <p>
+              Hoje, aos 19 anos, concilia o 3º semestre de Análise e Desenvolvimento de Sistemas na UniJorge com o trabalho na empresa do pai e o desenvolvimento de projetos próprios. Cada projeto é uma experimentação — de tecnologia, de design, de resolver problemas de verdade.
+            </p>
+            <p>
+              Seu primeiro app publicado — o <span class="accent">SISTEMA</span> — nasceu de uma obsessão com produtividade e de uma inspiração inusitada: o mangá Solo Leveling. O resultado é uma plataforma gamificada onde completar tarefas tem o mesmo prazer que subir de nível num RPG.
+            </p>
+          </div>
+          <div class="about-block reveal">
+            <span class="mono block-tag">&gt; filosofia</span>
+            <p>
+              Acredita que o melhor código é aquele que resolve um problema real, e o melhor design é aquele que o usuário nem percebe — só sente que funciona.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <div class="section-header reveal">
+        <span class="mono section-tag">&gt; timeline.log</span>
+        <h2>Linha do Tempo</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="timeline-content">
+            <span class="mono timeline-date">2005</span>
+            <h3 class="timeline-title">Início</h3>
+            <p class="timeline-desc">Nascido em Salvador/BA. Desde criança fascinado por tecnologia e como as coisas funcionam.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="timeline-content">
+            <span class="mono timeline-date">2023</span>
+            <h3 class="timeline-title">Primeiro código</h3>
+            <p class="timeline-desc">Primeiros passos sérios com HTML, CSS e JavaScript. A tela deixou de ser só output e passou a ser canvas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="timeline-content">
+            <span class="mono timeline-date">2024</span>
+            <h3 class="timeline-title">ADS na UniJorge</h3>
+            <p class="timeline-desc">Início da graduação em Análise e Desenvolvimento de Sistemas. Fundamentos sólidos de lógica, banco de dados e engenharia de software.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-line"></span>
+          </div>
+          <div class="timeline-content">
+            <span class="mono timeline-date">2024</span>
+            <h3 class="timeline-title">Sistema PDV</h3>
+            <p class="timeline-desc">Desenvolveu sistema de ponto de venda completo com Electron para a loja de roupas de bebê da família. Primeiro projeto com impacto real no dia a dia.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <span class="mono timeline-date">2025</span>
+            <h3 class="timeline-title">SISTEMA — primeiro app publicado</h3>
+            <p class="timeline-desc">Lançamento do primeiro aplicativo público: plataforma de produtividade gamificada com React e Supabase. Online em sistema-pyzc.vercel.app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="section-header reveal">
+        <span class="mono section-tag">&gt; skills.map()</span>
+        <h2>Habilidades</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">// Front-End</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">// Back-End</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">// Desktop / Mobile</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Electron</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Android (APK)</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">// Dados</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">// Ferramentas</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">// Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Resolução de Problemas</span>
+            <span class="skill-tag">Autodidata</span>
+            <span class="skill-tag">Aprendizado Rápido</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="mono footer-left">&copy; 2025 Rodrigo Costa</span>
+      <span class="mono footer-right accent">build_01 // online</span>
+    </div>
+  </footer>
+
+  <div class="page-transition" id="pageTransition"></div>
+  <script src="main.js"></script>
+</body>
+</html>
