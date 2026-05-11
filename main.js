@@ -151,7 +151,11 @@ if (contactForm) {
     const body = `Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${contactForm.message.value.trim()}`;
     const mailto = `mailto:rorodrigo012007@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    window.location.href = mailto;
+    const tempLink = document.createElement('a');
+    tempLink.href = mailto;
+    document.body.appendChild(tempLink);
+    tempLink.click();
+    document.body.removeChild(tempLink);
 
     setTimeout(() => {
       contactForm.style.display = 'none';
