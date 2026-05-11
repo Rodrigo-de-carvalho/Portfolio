@@ -1,486 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos // Rodrigo de Carvalho Costa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos — Rodrigo de Carvalho Costa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="theme.js"></script>
 </head>
 <body>
-
-  <div class="scanlines"></div>
-  <div class="grid-bg"></div>
-
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">
-      <span class="mono">&gt; rodrigo.dev</span>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link"><span class="mono">01.</span> início</a></li>
-      <li><a href="sobre.html" class="nav-link"><span class="mono">02.</span> sobre</a></li>
-      <li><a href="projetos.html" class="nav-link active"><span class="mono">03.</span> projetos</a></li>
-      <li><a href="contato.html" class="nav-link"><span class="mono">04.</span> contato</a></li>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">RC</span>
+      <span class="logo-name">Rodrigo de Carvalho Costa</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html" class="active">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
     </ul>
-  </nav>
-
-  <main>
-    <section class="page-hero">
-      <div class="page-hero-inner reveal">
-        <span class="mono page-tag">&gt; projetos.ls</span>
-        <h1 class="page-title">Projetos</h1>
-        <p class="page-subtitle mono">Sistemas construídos para resolver problemas reais.</p>
-      </div>
-    </section>
-
-    <section class="projects-section">
-      <!-- PROJETO 01: SISTEMA -->
-      <article class="project-card big reveal" id="sistema">
-        <div class="project-number mono">01</div>
-        <div class="project-inner">
-          <div class="project-mockup">
-            <div class="mockup-window">
-              <div class="mockup-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="mono mockup-url">sistema-pyzc.vercel.app</span>
-              </div>
-              <div class="mockup-screen sistema-screen">
-                <div class="mockup-ui">
-                  <div class="mui-header">
-                    <span class="mono accent">SISTEMA</span>
-                    <span class="mono mui-level">LVL <span id="lvlCount">7</span></span>
-                  </div>
-                  <div class="mui-xp-bar">
-                    <div class="mui-xp-fill" style="width:68%"></div>
-                  </div>
-                  <div class="mono mui-xp-text">2840 / 4200 XP</div>
-                  <div class="mui-quests">
-                    <div class="mui-quest done">
-                      <span class="mono">✓</span>
-                      <span>Estudar React Hooks</span>
-                      <span class="mono accent">+120 XP</span>
-                    </div>
-                    <div class="mui-quest done">
-                      <span class="mono">✓</span>
-                      <span>Deploy no Vercel</span>
-                      <span class="mono accent">+200 XP</span>
-                    </div>
-                    <div class="mui-quest active">
-                      <span class="mono blink-slow">▶</span>
-                      <span>Documentar API</span>
-                      <span class="mono muted">+150 XP</span>
-                    </div>
-                    <div class="mui-quest locked">
-                      <span class="mono muted">🔒</span>
-                      <span class="muted">Missão Especial</span>
-                      <span class="mono muted">???</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-info">
-            <div class="project-meta mono">
-              <span class="accent">&gt;</span> produtividade · gamification · web
-            </div>
-            <h2 class="project-title">SISTEMA</h2>
-            <p class="project-desc">
-              Inspirado no universo de Solo Leveling, o SISTEMA transforma tarefas do dia a dia em missões RPG. Complete objetivos, ganhe XP, suba de nível e desbloqueie conquistas.
-            </p>
-            <div class="project-features">
-              <div class="feature-item mono">
-                <span class="accent">//</span> Sistema de XP e níveis progressivos
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Missões diárias e semanais
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Autenticação via Supabase
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Interface responsiva e animada
-              </div>
-            </div>
-            <div class="project-tags">
-              <span class="tag mono">React</span>
-              <span class="tag mono">Supabase</span>
-              <span class="tag mono">JavaScript</span>
-              <span class="tag mono">CSS3</span>
-              <span class="tag mono">Vercel</span>
-            </div>
-            <div class="project-links">
-              <a href="https://sistema-pyzc.vercel.app" target="_blank" rel="noopener" class="btn-primary">
-                <span class="mono">acessar live</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJETO 02: PDV -->
-      <article class="project-card big reveal alt" id="pdv">
-        <div class="project-number mono">02</div>
-        <div class="project-inner">
-          <div class="project-mockup">
-            <div class="mockup-window">
-              <div class="mockup-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="mono mockup-url">PDV Loja Bebê</span>
-              </div>
-              <div class="mockup-screen pdv-screen">
-                <div class="mockup-ui pdv-ui">
-                  <div class="pdv-header mono">
-                    <span class="accent">CAIXA</span>
-                    <span class="muted">em operação</span>
-                  </div>
-                  <div class="pdv-items">
-                    <div class="pdv-item">
-                      <div class="pdv-barcode">
-                        <div class="barcode-lines"></div>
-                        <span class="mono barcode-num">7891234567890</span>
-                      </div>
-                      <div class="pdv-item-info">
-                        <span class="mono">Body Manga Longa</span>
-                        <span class="mono accent">R$ 49,90</span>
-                      </div>
-                    </div>
-                    <div class="pdv-item">
-                      <div class="pdv-barcode">
-                        <div class="barcode-lines"></div>
-                        <span class="mono barcode-num">7890987654321</span>
-                      </div>
-                      <div class="pdv-item-info">
-                        <span class="mono">Macacão RN</span>
-                        <span class="mono accent">R$ 67,00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pdv-total mono">
-                    <span>TOTAL</span>
-                    <span class="accent">R$ 116,90</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-info">
-            <div class="project-meta mono">
-              <span class="accent">&gt;</span> desktop · comercial · sqlite
-            </div>
-            <h2 class="project-title">Sistema PDV</h2>
-            <p class="project-desc">
-              Sistema de Ponto de Venda desenvolvido para a loja de roupas de bebê da família. Aplicação desktop completa com gestão de estoque, emissão de nota simplificada, geração de código de barras e relatórios de vendas.
-            </p>
-            <div class="project-features">
-              <div class="feature-item mono">
-                <span class="accent">//</span> Cadastro de produtos com código de barras
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> PDV com busca rápida e checkout
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Relatórios de vendas diárias/mensais
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Banco de dados local SQLite offline-first
-              </div>
-            </div>
-            <div class="project-tags">
-              <span class="tag mono">Electron</span>
-              <span class="tag mono">SQLite</span>
-              <span class="tag mono">Node.js</span>
-              <span class="tag mono">HTML/CSS</span>
-              <span class="tag mono">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <span class="btn-disabled mono">uso interno</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJETO 03: GERENCIADOR DE TAREFAS -->
-      <article class="project-card big reveal" id="tasks">
-        <div class="project-number mono">03</div>
-        <div class="project-inner">
-          <div class="project-mockup">
-            <div class="mockup-window">
-              <div class="mockup-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="mono mockup-url">teste-production-afa7.up.railway.app</span>
-              </div>
-              <div class="mockup-screen tasks-screen">
-                <div class="mockup-ui tasks-ui">
-                  <div class="tasks-header">
-                    <span class="mono accent">Gerenciador</span>
-                    <span class="mono tasks-count">12 tarefas</span>
-                  </div>
-                  <div class="tasks-list">
-                    <div class="task-row done">
-                      <span class="task-check mono">✓</span>
-                      <span class="task-name">Criar rota /api/tasks</span>
-                      <span class="mono task-badge">Flask</span>
-                    </div>
-                    <div class="task-row done">
-                      <span class="task-check mono">✓</span>
-                      <span class="task-name">Modelar banco MySQL</span>
-                      <span class="mono task-badge">SQL</span>
-                    </div>
-                    <div class="task-row active">
-                      <span class="task-check mono blink-slow">○</span>
-                      <span class="task-name">Build APK Android</span>
-                      <span class="mono task-badge accent-badge">Em andamento</span>
-                    </div>
-                    <div class="task-row">
-                      <span class="task-check mono muted">○</span>
-                      <span class="task-name muted">Testes unitários</span>
-                      <span class="mono task-badge muted">Pendente</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-info">
-            <div class="project-meta mono">
-              <span class="accent">&gt;</span> web + mobile · python · mysql
-            </div>
-            <h2 class="project-title">Gerenciador de Tarefas</h2>
-            <p class="project-desc">
-              Aplicação web construída com Flask e MySQL para gerenciamento de tarefas pessoais e em equipe. Com backend robusto em Python e frontend responsivo, o projeto também gerou um APK Android para acesso mobile nativo.
-            </p>
-            <div class="project-features">
-              <div class="feature-item mono">
-                <span class="accent">//</span> API REST em Flask/Python
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Banco de dados MySQL relacional
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Interface web responsiva
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> APK Android gerado com WebView
-              </div>
-            </div>
-            <div class="project-tags">
-              <span class="tag mono">Flask</span>
-              <span class="tag mono">Python</span>
-              <span class="tag mono">MySQL</span>
-              <span class="tag mono">HTML/CSS</span>
-              <span class="tag mono">Android</span>
-            </div>
-            <div class="project-links">
-              <a href="https://teste-production-afa7.up.railway.app/" target="_blank" rel="noopener" class="btn-primary">
-                <span class="mono">acessar live</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-      <!-- PROJETO 04: GERADOR DE ORÇAMENTOS -->
-      <article class="project-card big reveal alt" id="orcamentos">
-        <div class="project-number mono">04</div>
-        <div class="project-inner">
-          <div class="project-mockup">
-            <div class="mockup-window">
-              <div class="mockup-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="mono mockup-url">gerador de orçamentos</span>
-              </div>
-              <div class="mockup-screen orcamento-screen">
-                <div class="mockup-ui orcamento-ui">
-                  <div class="orc-header">
-                    <span class="mono accent">ORÇAMENTO</span>
-                    <span class="mono muted">#0042</span>
-                  </div>
-                  <div class="orc-form">
-                    <div class="orc-field">
-                      <span class="mono orc-label">cliente</span>
-                      <span class="mono orc-value">Empresa XYZ Ltda</span>
-                    </div>
-                    <div class="orc-field">
-                      <span class="mono orc-label">serviço</span>
-                      <span class="mono orc-value">Desenvolvimento Web</span>
-                    </div>
-                    <div class="orc-field">
-                      <span class="mono orc-label">valor</span>
-                      <span class="mono accent">R$ 2.500,00</span>
-                    </div>
-                  </div>
-                  <div class="orc-actions">
-                    <div class="orc-btn mono">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                      Gerar PDF
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-info">
-            <div class="project-meta mono">
-              <span class="accent">&gt;</span> web · geração de documentos · pdf
-            </div>
-            <h2 class="project-title">Gerador de Orçamentos em PDF</h2>
-            <p class="project-desc">
-              Sistema web onde a empresa preenche os dados do serviço e gera automaticamente um orçamento profissional em PDF. Sem precisar mexer em Word, Excel ou qualquer editor. Só preencher e baixar.
-            </p>
-            <div class="project-features">
-              <div class="feature-item mono">
-                <span class="accent">//</span> Formulário simples para preenchimento dos dados
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Geração automática de PDF formatado
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Layout profissional sem editor externo
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Funciona direto no navegador, sem instalação
-              </div>
-            </div>
-            <div class="project-tags">
-              <span class="tag mono">HTML</span>
-              <span class="tag mono">CSS</span>
-              <span class="tag mono">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <span class="btn-disabled mono">projeto privado</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJETO 05: GERENCIADOR FINANCEIRO -->
-      <article class="project-card big reveal" id="financeiro">
-        <div class="project-number mono">05</div>
-        <div class="project-inner">
-          <div class="project-mockup">
-            <div class="mockup-window">
-              <div class="mockup-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="mono mockup-url">gerenciador-psi.vercel.app</span>
-              </div>
-              <div class="mockup-screen fin-screen">
-                <div class="mockup-ui fin-ui">
-                  <div class="fin-header">
-                    <span class="mono accent">Finanças</span>
-                    <span class="mono fin-month">Maio 2026</span>
-                  </div>
-                  <div class="fin-summary">
-                    <div class="fin-card receita">
-                      <span class="mono fin-label">Receitas</span>
-                      <span class="mono fin-value accent">R$ 3.200</span>
-                    </div>
-                    <div class="fin-card despesa">
-                      <span class="mono fin-label">Despesas</span>
-                      <span class="mono fin-value red">R$ 1.840</span>
-                    </div>
-                  </div>
-                  <div class="fin-saldo mono">
-                    <span>Saldo</span>
-                    <span class="accent">R$ 1.360,00</span>
-                  </div>
-                  <div class="fin-list">
-                    <div class="fin-item">
-                      <span class="mono fin-dot accent">+</span>
-                      <span class="fin-name mono">Freelance</span>
-                      <span class="mono accent">R$ 1.200</span>
-                    </div>
-                    <div class="fin-item">
-                      <span class="mono fin-dot red">-</span>
-                      <span class="fin-name mono">Aluguel</span>
-                      <span class="mono red">R$ 800</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-info">
-            <div class="project-meta mono">
-              <span class="accent">&gt;</span> web · finanças pessoais · vercel
-            </div>
-            <h2 class="project-title">Gerenciador Financeiro</h2>
-            <p class="project-desc">
-              Aplicação web para controle de finanças pessoais. Registre receitas e despesas, acompanhe o saldo e visualize seus gastos de forma clara e organizada, tudo pelo navegador.
-            </p>
-            <div class="project-features">
-              <div class="feature-item mono">
-                <span class="accent">//</span> Cadastro de receitas e despesas
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Resumo de saldo em tempo real
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Histórico de transações
-              </div>
-              <div class="feature-item mono">
-                <span class="accent">//</span> Interface limpa e responsiva
-              </div>
-            </div>
-            <div class="project-tags">
-              <span class="tag mono">HTML</span>
-              <span class="tag mono">CSS</span>
-              <span class="tag mono">JavaScript</span>
-              <span class="tag mono">Vercel</span>
-            </div>
-            <div class="project-links">
-              <a href="https://gerenciador-psi.vercel.app/" target="_blank" rel="noopener" class="btn-primary">
-                <span class="mono">acessar live</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="cta-section reveal">
-      <div class="cta-box">
-        <span class="mono cta-tag">&gt; next.project</span>
-        <h2 class="cta-title">Tem um projeto em mente?</h2>
-        <p class="cta-desc">Vamos construir algo juntos.</p>
-        <a href="contato.html" class="btn-primary">
-          <span class="mono">entrar em contato</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="mono footer-left">&copy; 2026 Rodrigo de Carvalho Costa</span>
-      <span class="mono footer-right accent">Salvador, BA</span>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Alternar tema">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <div class="page-transition" id="pageTransition"></div>
-  <script src="main.js"></script>
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Portfólio</p>
+      <h1>Projetos.</h1>
+      <p>Trabalhos que construí explorando front-end, back-end e banco de dados.</p>
+    </div>
+  </section>
+
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-title">SISTEMA</h3>
+            <span class="badge badge-live">Live</span>
+          </div>
+          <p class="project-desc">App de produtividade gamificada que transforma tarefas em conquistas. Os usuários ganham pontos ao completar atividades, sobem de nível e acompanham sua evolução ao longo do tempo. Autenticação e persistência via Supabase, interface construída em React.</p>
+          <ul class="tech-list">
+            <li>React</li>
+            <li>Supabase</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://sistema-pyzc.vercel.app" target="_blank" rel="noopener" class="project-link">
+              Acessar site
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-title">Gerenciador de Tarefas</h3>
+            <span class="badge badge-live">Live</span>
+          </div>
+          <p class="project-desc">Plataforma web para organização de tarefas com persistência em banco de dados. Backend em Flask cuidando da lógica e da integração com MySQL, frontend simples e direto. Deploy em produção via Railway.</p>
+          <ul class="tech-list">
+            <li>Flask</li>
+            <li>MySQL</li>
+            <li>Python</li>
+            <li>Jinja</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://teste-production-afa7.up.railway.app" target="_blank" rel="noopener" class="project-link">
+              Acessar site
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-title">Gerenciador Financeiro</h3>
+            <span class="badge badge-live">Live</span>
+          </div>
+          <p class="project-desc">Aplicação web para controle de finanças pessoais. Permite registrar receitas e despesas e acompanhar o saldo em tempo real, com cálculos automáticos e interface simples, sem dependência de servidor.</p>
+          <ul class="tech-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://gerenciador-psi.vercel.app" target="_blank" rel="noopener" class="project-link">
+              Acessar site
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-title">PDV Loja Infantil</h3>
+            <span class="badge badge-private">Privado</span>
+          </div>
+          <p class="project-desc">Sistema desktop de ponto de venda desenvolvido para uma loja de roupas de bebê. Permite cadastro de produtos, controle de estoque, registro de vendas e relatórios. Funciona offline com banco local em SQLite, empacotado em Electron.</p>
+          <ul class="tech-list">
+            <li>Electron</li>
+            <li>SQLite</li>
+            <li>Node.js</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-actions">
+            <span class="project-link muted">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Repositório privado
+            </span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3 class="project-title">Gerador de Orçamentos</h3>
+            <span class="badge badge-private">Privado</span>
+          </div>
+          <p class="project-desc">Ferramenta web para gerar orçamentos em PDF a partir de um formulário. Layout pensado para impressão, com cálculos automáticos e exportação direta pelo navegador, sem dependência de servidor.</p>
+          <ul class="tech-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-actions">
+            <span class="project-link muted">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Repositório privado
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2026 Rodrigo de Carvalho Costa</span>
+      <span>Salvador <span class="accent">·</span> BA</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

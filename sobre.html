@@ -1,243 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre // Rodrigo de Carvalho Costa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Rodrigo de Carvalho Costa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="theme.js"></script>
 </head>
 <body>
-
-  <div class="scanlines"></div>
-  <div class="grid-bg"></div>
-
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">
-      <span class="mono">&gt; rodrigo.dev</span>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link"><span class="mono">01.</span> início</a></li>
-      <li><a href="sobre.html" class="nav-link active"><span class="mono">02.</span> sobre</a></li>
-      <li><a href="projetos.html" class="nav-link"><span class="mono">03.</span> projetos</a></li>
-      <li><a href="contato.html" class="nav-link"><span class="mono">04.</span> contato</a></li>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">RC</span>
+      <span class="logo-name">Rodrigo de Carvalho Costa</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html" class="active">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
     </ul>
-  </nav>
-
-  <main>
-    <section class="page-hero">
-      <div class="page-hero-inner reveal">
-        <span class="mono page-tag">&gt; sobre.txt</span>
-        <h1 class="page-title">Sobre mim</h1>
-        <p class="page-subtitle mono">Desenvolvedor front-end, 19 anos, Salvador/BA.</p>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="about-grid">
-        <div class="about-photo-col reveal">
-          <div class="about-photo-wrap">
-            <div class="photo-frame medium">
-              <div class="photo-corner tl"></div>
-              <div class="photo-corner tr"></div>
-              <div class="photo-corner bl"></div>
-              <div class="photo-corner br"></div>
-              <div class="photo-scan"></div>
-              <img src="foto.jpg" alt="Rodrigo de Carvalho Costa" class="hero-photo" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
-              <div class="photo-fallback mono">R.C</div>
-            </div>
-          </div>
-          <div class="about-quick reveal">
-            <div class="quick-item">
-              <span class="mono quick-key">nome</span>
-              <span class="quick-val">Rodrigo de Carvalho Costa</span>
-            </div>
-            <div class="quick-item">
-              <span class="mono quick-key">nascimento</span>
-              <span class="quick-val">2007, Salvador/BA</span>
-            </div>
-            <div class="quick-item">
-              <span class="mono quick-key">idade</span>
-              <span class="quick-val">19 anos</span>
-            </div>
-            <div class="quick-item">
-              <span class="mono quick-key">curso</span>
-              <span class="quick-val">ADS 3º sem. UniJorge</span>
-            </div>
-            <div class="quick-item">
-              <span class="mono quick-key">status</span>
-              <span class="quick-val accent">disponível para projetos</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-text-col">
-          <div class="about-block reveal">
-            <span class="mono block-tag">&gt; como comecei</span>
-            <p>
-              Comecei a programar em 2025, quando entrei no curso de ADS na UniJorge. As aulas me deram a base, mas o que me fez avançar mesmo foi estudar por conta própria, assistindo vídeos e pesquisando sobre os assuntos que me interessavam.
-            </p>
-          </div>
-          <div class="about-block reveal">
-            <span class="mono block-tag">&gt; como me desenvolvi</span>
-            <p>
-              Fui aprendendo fazendo projetos reais. Cada coisa que eu construí me ensinou mais do que qualquer tutorial. Hoje trabalho na empresa do pai enquanto estudo e continuo desenvolvendo projetos nas horas livres.
-            </p>
-            <p>
-              Um dos projetos que mais curti construir foi o <span class="accent">SISTEMA</span>, um app de produtividade gamificada inspirado no mangá Solo Leveling, lançado em 2026.
-            </p>
-          </div>
-          <div class="about-block reveal">
-            <span class="mono block-tag">&gt; o que acredito</span>
-            <p>
-              Acredito que o melhor código é aquele que resolve um problema real, e que o melhor design é aquele que o usuário não precisa pensar para usar.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="timeline-section">
-      <div class="section-header reveal">
-        <span class="mono section-tag">&gt; timeline.log</span>
-        <h2>Linha do Tempo</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-marker">
-            <span class="marker-dot"></span>
-            <span class="marker-line"></span>
-          </div>
-          <div class="timeline-content">
-            <span class="mono timeline-date">2007</span>
-            <h3 class="timeline-title">Nascimento</h3>
-            <p class="timeline-desc">Nascido em Salvador, Bahia.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-marker">
-            <span class="marker-dot"></span>
-            <span class="marker-line"></span>
-          </div>
-          <div class="timeline-content">
-            <span class="mono timeline-date">2025</span>
-            <h3 class="timeline-title">ADS na UniJorge e início na programação</h3>
-            <p class="timeline-desc">Entrei no curso de Análise e Desenvolvimento de Sistemas. Foi por meio das aulas e dos estudos por conta própria que comecei a programar de verdade.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-marker">
-            <span class="marker-dot"></span>
-            <span class="marker-line"></span>
-          </div>
-          <div class="timeline-content">
-            <span class="mono timeline-date">2025 / 2026</span>
-            <h3 class="timeline-title">Primeiros projetos reais</h3>
-            <p class="timeline-desc">Desenvolvi o Sistema PDV para a loja da família, o Gerenciador de Tarefas e o Gerenciador Financeiro. Aprendi na prática, resolvendo problemas reais.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-marker">
-            <span class="marker-dot"></span>
-            <span class="marker-line"></span>
-          </div>
-          <div class="timeline-content">
-            <span class="mono timeline-date">2026</span>
-            <h3 class="timeline-title">SISTEMA publicado</h3>
-            <p class="timeline-desc">Lancei o SISTEMA, app de produtividade gamificada com React e Supabase. Online em sistema-pyzc.vercel.app.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-marker">
-            <span class="marker-dot"></span>
-          </div>
-          <div class="timeline-content">
-            <span class="mono timeline-date">2026</span>
-            <h3 class="timeline-title">3º semestre em andamento</h3>
-            <p class="timeline-desc">Atualmente no 3º semestre de ADS na UniJorge, combinando faculdade, trabalho e novos projetos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills-section">
-      <div class="section-header reveal">
-        <span class="mono section-tag">&gt; skills.map()</span>
-        <h2>Habilidades</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <h3 class="skill-group-title mono">// Front-End</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Responsive Design</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3 class="skill-group-title mono">// Back-End</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Flask</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">REST APIs</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3 class="skill-group-title mono">// Desktop / Mobile</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Electron</span>
-            <span class="skill-tag">SQLite</span>
-            <span class="skill-tag">Android (APK)</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3 class="skill-group-title mono">// Dados</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">Supabase</span>
-            <span class="skill-tag">SQLite</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3 class="skill-group-title mono">// Ferramentas</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Git / GitHub</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">Vercel</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3 class="skill-group-title mono">// Soft Skills</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Resolução de Problemas</span>
-            <span class="skill-tag">Autodidata</span>
-            <span class="skill-tag">Aprendizado Rápido</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="mono footer-left">&copy; 2026 Rodrigo de Carvalho Costa</span>
-      <span class="mono footer-right accent">Salvador, BA</span>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Alternar tema">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <div class="page-transition" id="pageTransition"></div>
-  <script src="main.js"></script>
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Sobre mim</p>
+      <h1>Um pouco da minha história.</h1>
+      <p>Desenvolvedor front-end em formação, construindo projetos reais enquanto estudo.</p>
+    </div>
+  </section>
+
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div class="prose">
+        <p>Tenho 19 anos, moro em Salvador, na Bahia, e estou cursando o 3º semestre de Análise e Desenvolvimento de Sistemas na UniJorge.</p>
+        <p class="muted">Comecei a programar em 2025, a partir das aulas da faculdade e estudando por conta própria. O que era curiosidade rapidamente virou rotina: fui colocando em prática tudo o que aprendia, criando projetos pequenos que com o tempo viraram aplicações reais, com banco de dados e deploy.</p>
+        <p class="muted">Hoje meu foco está no front-end — gosto de pensar em como uma interface se comporta, como ela responde a quem está do outro lado da tela. Mas também trabalho com back-end quando o projeto pede, porque entender as duas pontas me ajuda a entregar algo coerente.</p>
+        <p class="muted">Sigo estudando todo dia, sem pressa de queimar etapas. Prefiro construir uma base sólida e fazer cada projeto um pouco melhor que o anterior.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">2007</p>
+          <h3 class="timeline-title">Nascimento</h3>
+          <p class="timeline-desc">Nasci em Salvador, Bahia, onde vivo até hoje.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2025</p>
+          <h3 class="timeline-title">Ingresso em ADS e início na programação</h3>
+          <p class="timeline-desc">Entrei no curso de Análise e Desenvolvimento de Sistemas na UniJorge e comecei a estudar lógica e desenvolvimento web, tanto pelas aulas quanto por conta própria.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2025</p>
+          <h3 class="timeline-title">Primeiros projetos com banco de dados</h3>
+          <p class="timeline-desc">Construí o Gerenciador de Tarefas em Flask com MySQL e o PDV para uma loja de roupas de bebê usando Electron e SQLite. Também desenvolvi o Gerenciador Financeiro e o Gerador de Orçamentos em PDF.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2026</p>
+          <h3 class="timeline-title">SISTEMA — primeiro projeto em React</h3>
+          <p class="timeline-desc">Desenvolvi o SISTEMA, um app de produtividade gamificada usando React e Supabase, com deploy em produção.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Hoje</p>
+          <h3 class="timeline-title">3º semestre e projetos em produção</h3>
+          <p class="timeline-desc">Estou no 3º semestre da faculdade, com projetos em produção e seguindo nos estudos de front-end.</p>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Front-End</h3>
+          <ul class="skill-tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Back-End</h3>
+          <ul class="skill-tags">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Desktop</h3>
+          <ul class="skill-tags">
+            <li>Electron</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Dados</h3>
+          <ul class="skill-tags">
+            <li>MySQL</li>
+            <li>Supabase</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Ferramentas</h3>
+          <ul class="skill-tags">
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <ul class="skill-tags">
+            <li>Autonomia</li>
+            <li>Aprendizado contínuo</li>
+            <li>Atenção aos detalhes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2026 Rodrigo de Carvalho Costa</span>
+      <span>Salvador <span class="accent">·</span> BA</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
