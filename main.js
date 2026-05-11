@@ -147,27 +147,15 @@ if (contactForm) {
     if (btnText) btnText.textContent = 'enviando...';
     if (submitBtn) submitBtn.disabled = true;
 
-    const data = new FormData(contactForm);
+    const subject = contactForm.subject.value.trim() || 'Contato pelo portfólio';
+    const body = `Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${contactForm.message.value.trim()}`;
+    const mailto = `mailto:rorodrigo012007@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    fetch('https://formspree.io/f/SEU_ID_AQUI', {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(res => {
-      if (res.ok) {
-        contactForm.style.display = 'none';
-        if (formSuccess) formSuccess.classList.add('visible');
-      } else {
-        if (btnText) btnText.textContent = 'enviar mensagem';
-        if (submitBtn) submitBtn.disabled = false;
-        showError('messageError', 'erro ao enviar. tente pelo email diretamente.');
-      }
-    })
-    .catch(() => {
-      if (btnText) btnText.textContent = 'enviar mensagem';
-      if (submitBtn) submitBtn.disabled = false;
-      showError('messageError', 'erro de conexão. tente pelo email diretamente.');
-    });
+    window.location.href = mailto;
+
+    setTimeout(() => {
+      contactForm.style.display = 'none';
+      if (formSuccess) formSuccess.classList.add('visible');
+    }, 500);
   });
 }
