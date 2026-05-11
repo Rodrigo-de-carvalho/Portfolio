@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodrigo Costa // Dev Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="grid-bg"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="mono">&gt; rodrigo.dev</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active"><span class="mono">01.</span> início</a></li>
+      <li><a href="sobre.html" class="nav-link"><span class="mono">02.</span> sobre</a></li>
+      <li><a href="projetos.html" class="nav-link"><span class="mono">03.</span> projetos</a></li>
+      <li><a href="contato.html" class="nav-link"><span class="mono">04.</span> contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title mono">~/portfolio — bash</span>
+          </div>
+          <div class="terminal-body">
+            <p class="mono terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+            <p class="mono terminal-output">rodrigo_costa</p>
+            <p class="mono terminal-line"><span class="prompt">$</span> <span class="cmd">cat perfil.json</span></p>
+          </div>
+        </div>
+
+        <div class="hero-main">
+          <div class="hero-photo-wrap">
+            <div class="photo-frame">
+              <div class="photo-corner tl"></div>
+              <div class="photo-corner tr"></div>
+              <div class="photo-corner bl"></div>
+              <div class="photo-corner br"></div>
+              <div class="photo-scan"></div>
+              <img src="foto.jpg" alt="Rodrigo Costa" class="hero-photo" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+              <div class="photo-fallback mono">R.C</div>
+            </div>
+            <div class="photo-badge mono">
+              <span class="status-dot"></span>disponível
+            </div>
+          </div>
+
+          <div class="hero-text">
+            <div class="hero-greeting mono">&gt; olá, eu sou</div>
+            <h1 class="hero-name">
+              <span class="type-name" id="typeName"></span><span class="cursor-blink">|</span>
+            </h1>
+            <div class="hero-role">
+              <span class="role-tag mono">&lt;</span>
+              <span class="role-text">Desenvolvedor Front-End</span>
+              <span class="role-tag mono">/&gt;</span>
+            </div>
+            <p class="hero-desc">
+              19 anos · Salvador/BA · ADS @ UniJorge<br>
+              <span class="mono accent">Transformando ideias em interfaces.</span>
+            </p>
+            <div class="hero-ctas">
+              <a href="projetos.html" class="btn-primary">
+                <span class="mono">ver projetos</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="contato.html" class="btn-outline mono">contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item reveal">
+          <span class="stat-num mono">3+</span>
+          <span class="stat-label">projetos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item reveal">
+          <span class="stat-num mono">19</span>
+          <span class="stat-label">anos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item reveal">
+          <span class="stat-num mono">∞</span>
+          <span class="stat-label">curiosidade</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack-section">
+      <div class="section-header reveal">
+        <span class="mono section-tag">&gt; stack.current</span>
+        <h2>Tecnologias</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card reveal">
+          <span class="stack-icon mono">{}</span>
+          <span class="stack-name">React</span>
+        </div>
+        <div class="stack-card reveal">
+          <span class="stack-icon mono">&lt;/&gt;</span>
+          <span class="stack-name">HTML/CSS</span>
+        </div>
+        <div class="stack-card reveal">
+          <span class="stack-icon mono">JS</span>
+          <span class="stack-name">JavaScript</span>
+        </div>
+        <div class="stack-card reveal">
+          <span class="stack-icon mono">⚡</span>
+          <span class="stack-name">Electron</span>
+        </div>
+        <div class="stack-card reveal">
+          <span class="stack-icon mono">🐍</span>
+          <span class="stack-name">Python/Flask</span>
+        </div>
+        <div class="stack-card reveal">
+          <span class="stack-icon mono">🗄</span>
+          <span class="stack-name">SQL/Supabase</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="section-header reveal">
+        <span class="mono section-tag">&gt; projects.featured</span>
+        <h2>Destaque</h2>
+      </div>
+      <div class="featured-card reveal">
+        <div class="featured-meta mono">
+          <span class="accent">01</span> / projeto em destaque
+        </div>
+        <h3 class="featured-title">SISTEMA</h3>
+        <p class="featured-desc">App de produtividade gamificada inspirado em Solo Leveling. Complete tarefas, suba de nível, desbloqueie conquistas. React + Supabase.</p>
+        <div class="featured-tags">
+          <span class="tag mono">React</span>
+          <span class="tag mono">Supabase</span>
+          <span class="tag mono">Gamification</span>
+        </div>
+        <div class="featured-actions">
+          <a href="https://sistema-pyzc.vercel.app" target="_blank" rel="noopener" class="btn-primary">
+            <span class="mono">acessar live</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="projetos.html" class="btn-outline mono">ver todos</a>
+        </div>
+        <div class="featured-deco mono">&gt;_</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="mono footer-left">&copy; 2025 Rodrigo Costa</span>
+      <span class="mono footer-right accent">build_01 // online</span>
+    </div>
+  </footer>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
