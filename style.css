@@ -1745,3 +1745,113 @@ main {
     gap: 0.3rem;
   }
 }
+
+/* ============================================================
+   TEMA — BOTÃO TOGGLE
+   ============================================================ */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  color: var(--text2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+
+.theme-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.theme-btn .icon-sun { display: none; }
+.theme-btn .icon-moon { display: block; }
+[data-theme="light"] .theme-btn .icon-sun { display: block; }
+[data-theme="light"] .theme-btn .icon-moon { display: none; }
+
+/* ============================================================
+   TEMA CLARO
+   ============================================================ */
+
+[data-theme="light"] {
+  --bg: #f5f4ef;
+  --bg2: #edece7;
+  --bg3: #e6e5e0;
+  --surface: #ffffff;
+  --surface2: #f2f1ec;
+  --border: #d0cfc8;
+  --accent: #008a44;
+  --accent2: #0077aa;
+  --accent-dim: rgba(0,138,68,0.10);
+  --accent-dim2: rgba(0,119,170,0.08);
+  --text: #1a1a14;
+  --text2: #545d53;
+  --muted: #7d8a7e;
+}
+
+[data-theme="light"] .grid-bg {
+  background-image:
+    linear-gradient(rgba(0,138,68,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,138,68,0.04) 1px, transparent 1px);
+}
+
+[data-theme="light"] .scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.018) 3px,
+    rgba(0,0,0,0.018) 4px
+  );
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(245,244,239,0.90);
+}
+
+[data-theme="light"] .navbar.scrolled {
+  background: rgba(245,244,239,0.97);
+}
+
+[data-theme="light"] .photo-badge {
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(0,138,68,0.35);
+}
+
+[data-theme="light"] .status-dot {
+  background: #ffffff;
+}
+
+[data-theme="light"] .btn-primary:hover {
+  background: #006a34;
+  box-shadow: 0 4px 20px rgba(0,138,68,0.25);
+}
+
+@media (max-width: 768px) {
+  [data-theme="light"] .nav-links {
+    background: rgba(245,244,239,0.97);
+  }
+}
