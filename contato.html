@@ -1,184 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato // Rodrigo de Carvalho Costa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Rodrigo de Carvalho Costa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="theme.js"></script>
 </head>
 <body>
-
-  <div class="scanlines"></div>
-  <div class="grid-bg"></div>
-
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">
-      <span class="mono">&gt; rodrigo.dev</span>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link"><span class="mono">01.</span> início</a></li>
-      <li><a href="sobre.html" class="nav-link"><span class="mono">02.</span> sobre</a></li>
-      <li><a href="projetos.html" class="nav-link"><span class="mono">03.</span> projetos</a></li>
-      <li><a href="contato.html" class="nav-link active"><span class="mono">04.</span> contato</a></li>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">RC</span>
+      <span class="logo-name">Rodrigo de Carvalho Costa</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
     </ul>
-  </nav>
-
-  <main>
-    <section class="page-hero">
-      <div class="page-hero-inner reveal">
-        <span class="mono page-tag">&gt; contato</span>
-        <h1 class="page-title">Contato</h1>
-        <p class="page-subtitle mono">Tem um projeto, uma oportunidade ou só quer trocar ideia?</p>
-      </div>
-    </section>
-
-    <section class="contact-section">
-      <div class="contact-grid">
-        <div class="contact-info-col reveal">
-          <div class="contact-block">
-            <span class="mono block-tag">&gt; onde me encontrar</span>
-            <div class="contact-channels">
-              <a href="mailto:rorodrigo012007@gmail.com" class="channel-item">
-                <div class="channel-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </div>
-                <div class="channel-info">
-                  <span class="channel-label mono">email</span>
-                  <span class="channel-value">rorodrigo012007@gmail.com</span>
-                </div>
-                <svg class="channel-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-
-              <a href="tel:+5571982648511" class="channel-item">
-                <div class="channel-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                </div>
-                <div class="channel-info">
-                  <span class="channel-label mono">telefone / whatsapp</span>
-                  <span class="channel-value">(71) 98264-8511</span>
-                </div>
-                <svg class="channel-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-block">
-            <span class="mono block-tag">&gt; localização</span>
-            <div class="location-box">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <div>
-                <p class="mono">Salvador, Bahia</p>
-                <p class="mono muted">Brasil</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-block">
-            <span class="mono block-tag">&gt; disponibilidade</span>
-            <div class="availability-box">
-              <div class="avail-item">
-                <span class="status-dot"></span>
-                <span class="mono">Projetos freelance</span>
-              </div>
-              <div class="avail-item">
-                <span class="status-dot"></span>
-                <span class="mono">Estágio / CLT</span>
-              </div>
-              <div class="avail-item">
-                <span class="status-dot"></span>
-                <span class="mono">Colaboração em projetos open source</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-col reveal">
-          <div class="form-header">
-            <span class="mono form-tag">&gt; envie uma mensagem</span>
-          </div>
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-group">
-              <label class="form-label mono" for="name">nome<span class="accent">*</span></label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-input"
-                placeholder="Seu nome"
-                required
-                autocomplete="name"
-              >
-              <span class="form-error mono" id="nameError"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label mono" for="email">email<span class="accent">*</span></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-input"
-                placeholder="seu@email.com"
-                required
-                autocomplete="email"
-              >
-              <span class="form-error mono" id="emailError"></span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label mono" for="subject">assunto</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="form-input"
-                placeholder="Projeto, oportunidade, parceria..."
-                autocomplete="off"
-              >
-            </div>
-
-            <div class="form-group">
-              <label class="form-label mono" for="message">mensagem<span class="accent">*</span></label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-input form-textarea"
-                placeholder="Descreva seu projeto ou oportunidade..."
-                rows="5"
-                required
-              ></textarea>
-              <span class="form-error mono" id="messageError"></span>
-            </div>
-
-            <button type="submit" class="btn-primary btn-full" id="submitBtn">
-              <span class="mono btn-text">enviar mensagem</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </button>
-
-            <div class="form-success" id="formSuccess">
-              <span class="mono accent">✓ mensagem enviada com sucesso!</span>
-              <p class="mono muted">Responderei em breve pelo email informado.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="mono footer-left">&copy; 2026 Rodrigo de Carvalho Costa</span>
-      <span class="mono footer-right accent">Salvador, BA</span>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Alternar tema">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <div class="page-transition" id="pageTransition"></div>
-  <script src="main.js"></script>
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Contato</p>
+      <h1>Vamos conversar.</h1>
+      <p>Se quiser falar sobre um projeto, oportunidade ou só trocar uma ideia sobre código, fico à disposição.</p>
+    </div>
+  </section>
+
+  <section class="section-sm" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid">
+        <a href="mailto:rorodrigo012007@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">rorodrigo012007@gmail.com</p>
+          </div>
+          <span class="contact-action">
+            Enviar mensagem
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+
+        <a href="https://wa.me/5571982648511" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Telefone / WhatsApp</p>
+            <p class="contact-value">(71) 98264-8511</p>
+          </div>
+          <span class="contact-action">
+            Abrir conversa
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="contact-info">
+        <span class="contact-info-dot"></span>
+        <div class="contact-info-text">
+          <h3>Disponível para projetos</h3>
+          <p>Aberto a oportunidades de estágio, freelas e colaborações em projetos front-end.</p>
+        </div>
+        <a href="projetos.html" class="btn btn-secondary">Ver projetos</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span>© 2026 Rodrigo de Carvalho Costa</span>
+      <span>Salvador <span class="accent">·</span> BA</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
