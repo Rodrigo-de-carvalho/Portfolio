@@ -76,7 +76,7 @@ function typeWriter(element, text, speed = 90, delay = 400) {
 
 const typeNameEl = document.getElementById('typeName');
 if (typeNameEl) {
-  typeWriter(typeNameEl, 'Rodrigo Costa', 80, 600);
+  typeWriter(typeNameEl, 'Rodrigo de Carvalho Costa', 80, 600);
 }
 
 // ---------- Intersection Observer — reveal ----------
