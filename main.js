@@ -149,13 +149,9 @@ if (contactForm) {
 
     const subject = contactForm.subject.value.trim() || 'Contato pelo portfólio';
     const body = `Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${contactForm.message.value.trim()}`;
-    const mailto = `mailto:rorodrigo012007@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=rorodrigo012007@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    const tempLink = document.createElement('a');
-    tempLink.href = mailto;
-    document.body.appendChild(tempLink);
-    tempLink.click();
-    document.body.removeChild(tempLink);
+    window.open(gmailUrl, '_blank');
 
     setTimeout(() => {
       contactForm.style.display = 'none';
