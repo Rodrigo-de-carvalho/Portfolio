@@ -1170,6 +1170,35 @@ main {
 .task-badge { font-size: 0.62rem; padding: 0.15rem 0.4rem; background: var(--bg3); border-radius: 3px; white-space: nowrap; }
 .accent-badge { background: rgba(0,229,255,0.1); color: var(--accent2); }
 
+/* Orçamento mockup */
+.orcamento-screen { background: #040b06; }
+.orcamento-ui { gap: 1rem; }
+.orc-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
+.orc-form { display: flex; flex-direction: column; gap: 0.5rem; }
+.orc-field { display: flex; justify-content: space-between; align-items: center; padding: 0.45rem 0.6rem; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 0.72rem; }
+.orc-label { color: var(--muted); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.orc-value { color: var(--text); }
+.orc-actions { margin-top: auto; }
+.orc-btn { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--accent); color: var(--bg); font-size: 0.72rem; font-weight: 700; padding: 0.5rem 1rem; border-radius: 4px; cursor: default; }
+
+/* Financeiro mockup */
+.fin-screen { background: #04090b; }
+.fin-ui { gap: 0.8rem; }
+.fin-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+.fin-month { font-size: 0.65rem; color: var(--muted); }
+.fin-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.fin-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0.5rem 0.6rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.fin-label { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.fin-value { font-size: 0.85rem; font-weight: 700; }
+.fin-value.red { color: var(--red); }
+.fin-saldo { display: flex; justify-content: space-between; background: rgba(0,255,136,0.06); border: 1px solid rgba(0,255,136,0.15); border-radius: 4px; padding: 0.5rem 0.7rem; font-size: 0.78rem; }
+.fin-list { display: flex; flex-direction: column; gap: 0.35rem; }
+.fin-item { display: grid; grid-template-columns: 1rem 1fr auto; gap: 0.4rem; align-items: center; font-size: 0.7rem; padding: 0.3rem 0.4rem; border-radius: 3px; background: var(--surface); }
+.fin-dot { font-weight: 700; }
+.fin-dot.red { color: var(--red); }
+.fin-name { color: var(--text2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.red { color: var(--red); }
+
 /* Project info */
 .project-meta {
   font-size: 0.78rem;
