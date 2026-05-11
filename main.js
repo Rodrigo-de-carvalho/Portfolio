@@ -143,16 +143,31 @@ if (contactForm) {
 
     if (!valid) return;
 
-    // Simulate sending (no backend)
-    if (submitBtn) {
-      const btnText = submitBtn.querySelector('.btn-text');
-      if (btnText) btnText.textContent = 'enviando...';
-      submitBtn.disabled = true;
-    }
+    const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+    if (btnText) btnText.textContent = 'enviando...';
+    if (submitBtn) submitBtn.disabled = true;
 
-    setTimeout(() => {
-      contactForm.style.display = 'none';
-      if (formSuccess) formSuccess.classList.add('visible');
-    }, 800);
+    const data = new FormData(contactForm);
+
+    fetch('https://formspree.io/f/SEU_ID_AQUI', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(res => {
+      if (res.ok) {
+        contactForm.style.display = 'none';
+        if (formSuccess) formSuccess.classList.add('visible');
+      } else {
+        if (btnText) btnText.textContent = 'enviar mensagem';
+        if (submitBtn) submitBtn.disabled = false;
+        showError('messageError', 'erro ao enviar. tente pelo email diretamente.');
+      }
+    })
+    .catch(() => {
+      if (btnText) btnText.textContent = 'enviar mensagem';
+      if (submitBtn) submitBtn.disabled = false;
+      showError('messageError', 'erro de conexão. tente pelo email diretamente.');
+    });
   });
 }
