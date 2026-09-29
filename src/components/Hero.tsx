@@ -18,8 +18,8 @@ function Hero() {
         <h1 className="hero-name">Rodrigo de Carvalho Costa</h1>
         <h2 className="hero-role">
           {t({
-            pt: 'Desenvolvedor Full-Stack | Estudante de ADS',
-            en: 'Full-Stack Developer | Systems Analysis Student',
+            pt: 'Desenvolvedor Full-Stack Júnior | Estudante de ADS',
+            en: 'Junior Full-Stack Developer | Systems Analysis Student',
           })}
         </h2>
         <p className="hero-location">Salvador, Bahia</p>
