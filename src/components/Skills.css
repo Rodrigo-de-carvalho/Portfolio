@@ -1,0 +1,31 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.skills-group {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.skills-group h3 {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.skills-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-group li {
+  color: var(--text-muted);
+  font-size: 15px;
+}
