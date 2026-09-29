@@ -1,20 +1,25 @@
+import type { Text } from '../i18n'
+
 export type Education = {
-  course: string
+  course: Text
   institution: string
   location: string
-  period: string
-  certifications: string[]
+  period: Text
+  certifications: Text[]
 }
 
 export const education: Education = {
-  course: 'Análise e Desenvolvimento de Sistemas',
+  course: {
+    pt: 'Análise e Desenvolvimento de Sistemas',
+    en: 'Systems Analysis and Development (Associate degree)',
+  },
   institution: 'UniJorge',
   location: 'Salvador, BA',
-  period: 'Desde 2025',
+  period: { pt: 'Desde 2025', en: 'Since 2025' },
   certifications: [
-    'Desenvolvimento Web',
-    'Lógica de Programação',
-    'MySQL',
-    'Linguagem C',
+    { pt: 'Desenvolvimento Web', en: 'Web Development' },
+    { pt: 'Lógica de Programação', en: 'Programming Logic' },
+    { pt: 'MySQL', en: 'MySQL' },
+    { pt: 'Linguagem C', en: 'C Language' },
   ],
 }

@@ -11,6 +11,16 @@
   gap: 12px;
 }
 
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent), var(--card-shadow);
+  margin-bottom: 12px;
+}
+
 .hero-greeting {
   color: var(--text-muted);
   font-weight: 600;
@@ -76,6 +86,11 @@
   .hero {
     padding-top: 56px;
     padding-bottom: 56px;
+  }
+
+  .hero-photo {
+    width: 128px;
+    height: 128px;
   }
 
   .hero-name {

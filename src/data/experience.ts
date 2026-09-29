@@ -1,20 +1,34 @@
+import type { Text } from '../i18n'
+
 export type Experience = {
   company: string
-  role: string
-  period: string
-  highlights: string[]
+  role: Text
+  period: Text
+  highlights: Text[]
 }
 
 export const experiences: Experience[] = [
   {
     company: 'EM Instalações e Manutenções Elétricas',
-    role: 'Auxiliar Administrativo e Técnico',
-    period: '2024 – atual',
+    role: { pt: 'Auxiliar Administrativo e Técnico', en: 'Administrative and Technical Assistant' },
+    period: { pt: '2024 – atual', en: '2024 – present' },
     highlights: [
-      'Elaboração de orçamentos e documentos técnicos',
-      'Elaboração e acompanhamento de contratos',
-      'Atendimento e relacionamento com clientes',
-      'Desenvolvimento de ferramentas internas para otimizar processos',
+      {
+        pt: 'Elaboração de orçamentos e documentos técnicos',
+        en: 'Preparing quotes and technical documents',
+      },
+      {
+        pt: 'Elaboração e acompanhamento de contratos',
+        en: 'Drafting and tracking contracts',
+      },
+      {
+        pt: 'Atendimento e relacionamento com clientes',
+        en: 'Customer service and client relations',
+      },
+      {
+        pt: 'Desenvolvimento de ferramentas internas para otimizar processos',
+        en: 'Building internal tools to streamline processes',
+      },
     ],
   },
 ]
