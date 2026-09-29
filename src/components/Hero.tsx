@@ -43,7 +43,14 @@ function Hero() {
             </a>
           </li>
           <li>
-            <a href="mailto:rorodrigo012007@gmail.com">Email</a>
+            <a href="https://wa.me/5571982648511" target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rorodrigo012007@gmail.com" target="_blank" rel="noreferrer">
+              Email
+            </a>
           </li>
         </ul>
       </div>

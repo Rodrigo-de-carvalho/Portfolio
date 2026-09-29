@@ -12,7 +12,20 @@ function Contact() {
         </p>
 
         <div className="contact-actions">
-          <a className="btn btn-primary" href="mailto:rorodrigo012007@gmail.com">
+          <a
+            className="btn btn-primary"
+            href="https://wa.me/5571982648511"
+            target="_blank"
+            rel="noreferrer"
+          >
+            WhatsApp
+          </a>
+          <a
+            className="btn btn-outline"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rorodrigo012007@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Enviar email
           </a>
           <a
